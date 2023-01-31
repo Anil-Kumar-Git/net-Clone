@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 function Header() {
-    const [isScorlling, setIsScorlling] = useState(false)
+    const [isScrolled, setIsScorlling] = useState(false)
 
     useEffect(() => {
         const handleScrolle = () => {
@@ -20,8 +20,8 @@ function Header() {
     }, [])
 
     return (
-        <header className={`${isScorlling&& 'bg-[#141414'}`}>
-            <div className='flex items-center space-x-2 md:space-x-10'>
+        <header className={`${isScrolled && 'bg-[#141414]'}`}>
+        <div className="flex items-center space-x-2 md:space-x-10">
                 <img
                     src="https://rb.gy/ulxxee"
                     width={100}
